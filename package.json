@@ -1,0 +1,26 @@
+{
+  "name": "connect-api-to-database",
+  "version": "1.0.0",
+  "description": "- Database, API and docker practice",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deb0890/Books.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deb0890/Books/issues"
+  },
+  "homepage": "https://github.com/Deb0890/Books#readme"
+}
