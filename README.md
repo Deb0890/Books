@@ -1,2 +1,2 @@
-# Books API 
-- practice connecting database to API
+# Books
+- Database, API and docker practice
