@@ -73,4 +73,4 @@ class Book {
     }
 }
 
-module.exports = { books };
+module.exports = { book };
