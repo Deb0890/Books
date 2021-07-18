@@ -23,4 +23,36 @@ router.get('/:id', async (req, res) => {
     }
 })
 
+// create book route
+router.post('/', async (req, res) => {
+    try {
+        const book = await Book.create(req.body.bookName, req.body.authorName)
+        res.json(book)
+    } catch(err) {
+        res.status(404).json({err})
+    }
+})
+
 // books update route
+router.patch('/:id', async (req, res) => {
+    try {
+        const book = await Book.findById(req.params.id)
+        const updatedBook = await book.update()
+        res.json({book: updatedBook})
+    } catch(err) {
+        res.status(500).json({err})
+    }
+})
+
+// delete book route
+router.delete('/:id', async (req, res) => {
+    try {
+        const book = await Book.findById(req.params.id)
+        await book.destroy()
+        res.status(204).json('Book deleted')
+    } catch(err) {
+        res.status(500).json({err})
+    }
+})
+
+module.exports = {router};
