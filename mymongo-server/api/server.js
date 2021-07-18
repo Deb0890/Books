@@ -11,4 +11,4 @@ server.use('/books', bookRoutes)
 //Root route
 server.get('/', (req, res) => res.send('Hello, book lover!'))
 
-module.exports = { server }
+module.exports = server;

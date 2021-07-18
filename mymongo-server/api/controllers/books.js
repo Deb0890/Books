@@ -6,7 +6,7 @@ const Book = require('../models/book')
 // books index route
 router.get('/', async (req, res) => {
     try {
-        const books = await Books.all
+        const books = await Book.all
         res.json({books})
     } catch(err) {
         res.status(500).json({err})
@@ -55,4 +55,4 @@ router.delete('/:id', async (req, res) => {
     }
 })
 
-module.exports = {router};
+module.exports = router;

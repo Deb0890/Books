@@ -1,8 +1,8 @@
 {
-  "name": "connect-api-to-database",
+  "name": "server",
   "version": "1.0.0",
   "description": "- Database, API and docker practice",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -12,7 +12,8 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",

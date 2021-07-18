@@ -1,4 +1,4 @@
-const { init } = require ('../dbConfig')
+const { init }  = require('../dbConfig')
 const { ObjectId } = require('mongodb')
 
 class Book {
@@ -73,4 +73,4 @@ class Book {
     }
 }
 
-module.exports = { book };
+module.exports = Book;
